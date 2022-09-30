@@ -1,0 +1,16 @@
+﻿<Window x:Class="Tema2_AdivinaNumero.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema2_AdivinaNumero"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="400">
+    <Grid>
+        <TextBlock TextWrapping="Wrap" Margin="0,88,224,105" Grid.Row="1"><Run Language="es-es" Text="¿"/><Run Text="Que número he pensado?"/></TextBlock>
+        <TextBox x:Name="entrada" Text="" TextWrapping="Wrap" Width="120" Margin="157,86,123,117" Grid.Row="1" TextChanged="TextBox_TextChanged"/>
+        <Button Content="Comprobar" Margin="56,157,241,50" Grid.Row="1" Click="Button_Click" IsDefault="True"/>
+        <Button Content="Reiniciar" Margin="208,157,89,49" Grid.Row="1" Click="Button_Reset"/>
+        <TextBlock x:Name="salida" Text="" TextWrapping="Wrap" Margin="295,76,-31,107" Grid.Row="1"/>
+    </Grid>
+</Window>
